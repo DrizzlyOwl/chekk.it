@@ -5,8 +5,7 @@
 		<a href="//twitter.com/PhonicUK">@PhonicUK</a> <br>
 		Chekk.it utilises
 		<a href="//requests.ryanmccue.info/">Requests</a> and <a href="//bukget.org">BukGet</a><br>
-		</small><br>
-		<code>Version 1.0.0</code>
+		</small>
 	</div>
 </footer>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?ver=1.10.2"></script>

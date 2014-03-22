@@ -7,7 +7,7 @@ require 'config.php';
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Chekk.it</title>
-	<link rel="icon" href="<?php echo HTTP; ?>assets/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="<?php echo HTTP; ?>assets/imgs/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="<?php echo HTTP; ?>style.css">
 	<script type="text/javascript" src="//use.typekit.net/lqr4clu.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -15,6 +15,7 @@ require 'config.php';
 <body>
 <section class="main main--index" role="main"> 
 	<div class="fullscreen fullscreen--home">
+		<code>&nbsp; v0.1.0 <a href="//github.com/ashd93/chekk.it">GitHub</a></code>
 		<div class="wrapper--thin">
 			<div class="home-centralised">
 				<img src="assets/imgs/logo-light-new.png" alt="Chekk.it" class="home-logo">

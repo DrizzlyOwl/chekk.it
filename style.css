@@ -522,6 +522,7 @@ figure img { display: block; }
 /** sidebar.scss */
 /** Home CSS */
 .fullscreen--home { background: url("assets/imgs/home/landscape-bg.jpg") center center; background-size: cover; background-attachment: fixed; margin-bottom: 3rem; }
+.fullscreen--home code, .fullscreen--home a { color: white; }
 
 .home-centralised { color: white; margin: 0 auto; text-align: center; }
 .home-centralised a { color: white; }
