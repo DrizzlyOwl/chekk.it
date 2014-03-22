@@ -1,0 +1,23 @@
+
+// colour.scss
+// define basic colours and then apply them to vars
+// e.g. $blue and $nav_bg: $blue;
+
+$clr_blue:					#3498db;
+
+// ui colors
+
+$clr_default: 				$clr_blue;
+$clr_success: 				#2ecc71; // Green
+$clr_warning: 				#e67e22; // Orange
+$clr_problem: 				#e74c3c; // Red
+
+// Links / Anchors
+
+$link: 					$clr_blue;
+$link_hover: 			darken($link,10%);
+$link_visited: 			$link;
+
+// Element Colours / Gradients
+
+$text_colour:			#2e3131;

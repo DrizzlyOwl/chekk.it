@@ -1,0 +1,97 @@
+// functions.scss
+// all functions and mixins go here
+
+////
+ // Whole Baseline
+ // This function checks to see if the font size
+ // multiplied by the baseline is a whole number.
+ // If not it rounds up the font size to ensure that 
+ // the baseline is a whole number, therefore a whole
+ // pixel. This fixes browser inconsistencies of rendering
+ // sub pixels.
+////
+
+@function whole_baseline($font_size,$baseline){
+
+	// If its a whole number
+	@if( round($font_size * $baseline) == $font_size * $baseline ){
+		@return percentage($font_size / 16);
+	} @else {
+		@return percentage(round($font_size * $baseline) / $baseline / 16);
+	}
+}
+
+// Clearfix
+
+@mixin clearfix() {
+	*zoom:1;
+	&:before, &:after {
+	    content:"";
+	    display:table;
+	}
+	&:after { clear:both; }
+}
+
+// Modernizr
+// Call this mixin to only apply styles on supported 
+// browsers anddevices.
+// The ampersand pulls in the parent selector
+
+@mixin modernizr($selector){
+
+	#{$selector} &	{
+		@content;
+	}
+}
+
+// handle all units with a sensible IE fallback
+
+@function typesize($multiplier:1){
+	//$is_ie is global and set in style.scss/ie.scss
+	@if( $is_ie == true ){
+		@return ($multiplier * $type_size_ie);
+	} @else {
+		@return $multiplier * $type_size;
+	}
+}
+
+// handle all units with a sensible IE fallback
+
+@function size($multiplier:1){
+	//$is_ie is global and set in style.scss/ie.scss
+	@if( $is_ie == true ){
+		@return $multiplier * $base_ie;
+	} @else {
+		@return $multiplier * $base;
+	}
+}
+
+// Grid generator
+
+@mixin susycss($class,$cols,$total_cols){
+	
+	#{$class}{
+		@include span-columns($cols,$total_cols);
+	}
+
+	#{$class}--omega{
+		@include span-columns( $cols omega,$total_cols );
+	}
+
+	@each $breakpoint in ('m',$m), ('m_up',$m_up), ('l',$l), ('l_up',$l_up), ('xl',$xl) {
+		$bp_name: nth($breakpoint, 1);
+		$bp_var: nth($breakpoint, 2);
+
+		#{$class}--#{$bp_name}{
+			@include at-breakpoint( $bp_var ){
+				@include span-columns( $cols,$total_cols );
+			}
+		}
+
+		#{$class}--#{$bp_name}--omega{
+			@include at-breakpoint( $bp_var ){
+				@include span-columns( $cols omega,$total_cols );
+			}
+		}
+	}
+}
