@@ -1,11 +1,11 @@
 /*
-Theme Name:     Flexbones Theme Beta 1.7
-Theme URI:      http://roikles.com/
+Theme Name:     Chekk.It
+Theme URI:      http://chekk.it/
 Description:    A Responsive minimal theme
-Author:         Rory Ashford
+Author:         Rory Ashford & Ash Davies
 Author URI:     http://roikles.com
-Version:        1.7
-License:		All work is the property of Rory Ashford
+Version:        1
+License:		All work is the property of Rory Ashford and Ash Davies
 License URI:	n/a
 */
 
@@ -25,24 +25,12 @@ $is_ie: false;
 // Config
 @import "configuration/_vars.scss";
 
-//Uncomment for IE
-
-/*
-$breakpoint-media-output: false;
-$breakpoint-ie-output: true;
-$breakpoint-raw-output: false;
-$base: 24px;
-*/
-
 // Vars
 @import "configuration/_colour.scss";
 
-// Dev Tools
-@import "configuration/_gridtacular.scss";
 
 // Global Styles
 @import "_global.scss";
-@import "_wordpress.scss";
 
 // UI
 @import "ui/_typography.scss";
@@ -58,5 +46,4 @@ $base: 24px;
 @import "_navigation.scss";
 @import "_header.scss";
 @import "_footer.scss";
-@import "_sidebar.scss";
 @import "_home.scss";

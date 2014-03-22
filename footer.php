@@ -8,7 +8,9 @@
 		</small>
 	</div>
 </footer>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?ver=1.10.2"></script>
-<script type="text/javascript" src="<?php echo HTTP; ?>assets/js/scripts-min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?ver=1.10.2"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+<script src="<?php echo HTTP; ?>assets/js/placeholders.jquery.min.js"></script>
+<script src="<?php echo HTTP; ?>assets/js/scripts-min.js"></script>
 </body>
 </html>

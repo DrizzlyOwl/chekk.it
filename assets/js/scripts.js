@@ -4,6 +4,22 @@
  * scripts.js should be called in the site footer
  */
 
+/**
+ * Yepnope testing and polyfilling
+ */
+
+yepnope([{
+	test : Modernizr.cssremunit,
+	nope : 'remfallback.js'
+},{
+	test : Modernizr.rgba,
+	nope : '//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js'
+},{
+	test: Modernizr.mq,
+	nope: '//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js'
+}]);
+
+
 //smooth scroll mofo
 jQuery.fn.scrollToViewPort=function(a){a=(typeof a=="undefined")?"slow":a;return this.each(function(){$("html,body").animate({scrollTop:$(this).offset().top},a)})};
 
@@ -22,6 +38,9 @@ function v_center(css_class){
 
 
 $(document).ready(function() {
+
+
+	$('.fullscreen--home').backstretch("/assets/imgs/home/landscape-bg.jpg");
 
 	$('html').addClass('js').removeClass('no-js');
 

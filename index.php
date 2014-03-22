@@ -2,15 +2,17 @@
 <?php
 require 'config.php';
 ?>
-<html>
+<html data-placeholder-focus="false" data-placeholder-live="false">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Chekk.it</title>
 	<link rel="icon" href="<?php echo HTTP; ?>assets/imgs/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="<?php echo HTTP; ?>style.css">
-	<script type="text/javascript" src="//use.typekit.net/lqr4clu.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script src="<?php echo HTTP; ?>assets/js/modernizr.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/yepnope/1.5.4/yepnope.min.js"></script>
+	<script src="//use.typekit.net/lqr4clu.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
 <section class="main main--index" role="main"> 
@@ -50,12 +52,12 @@ require 'config.php';
 			<p class="alert">Notice: Certain child plugins won't return a version number as they are handled by the parent plugin.<br>E.g. Essentials Chat and Essentials Protect are child plugins of Essentials.<p>
 			<h3>Setup</h3>
 			<p>Just make sure that you're covering these few steps and Chekk.it can start making your life easier.<p>
-			<code>Must be using the latest version of McMyAdmin</code><br><br>
-			<code>enable-query must be set to true in server.properties</code>
-			</code>
+			<p>1. <strong>Must be using the latest version of McMyAdmin</strong></p>
+			<p>2. <strong>'enable-query' must be set to true in server.properties</strong></p>
 			<p>All you need to do now is type your server IP or hostname along with your unique login details for McMyAdmin into the inputs above and Chekk.it will handle the rest.</p>
 			<h4 class="scroll-up">Ready to begin?</h4>
 			<p class="alert alert--problem">Disclaimer: We <strong>do not</strong> store your details on our server or database. If you are uneasy about using your regular login details, request a new account be set up specifically for chekk.it through McMyAdmin's user panel.</p>
+		</div>
 	</div>
 </section>
 <?php require ROOT . 'footer.php'; ?>

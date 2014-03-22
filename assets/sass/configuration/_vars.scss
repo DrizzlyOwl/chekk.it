@@ -7,35 +7,27 @@
 // Global font sizes for different breakpoints ( applied to html element )
 
 $font-size: 			100%;
-$font-size-m: 			100%;
-$font-size-l: 			112.5%;
-$font-size-xl: 			125%;
+$font-size-m: 		100%;
+$font-size-l: 		112.5%;
+$font-size-xl: 		125%;
 
-// Type defaults ( used when calling typesize() )
-
-$type_size: 			1rem;
-$type_size_ie: 			16px;
-
-// size defaults ( used when calling size() )
-
-$base: 					1.5rem;
-$base_ie: 				24px;
+$base_ie:       16px;
 
 // Typography Sizes (add for each breakpoint as required)
 
 // font size bases
-$h1:					typesize(3);
-$h2:					typesize(2.25); 
-$h3:					typesize(1.75);
-$h4:					typesize(1.125);
-$p:						typesize(1);
-$lead:					typesize(1.5);
+$h1:					45px;
+$h2:					34px; 
+$h3:					26px;
+$h4:					20px;
+$p:						$base_ie;
+$lead:				22px;
 
 
 // Weights
 $light: 				300;
 $medium: 				400;
-$semibold: 				600;
+$semibold: 			600;
 $bold: 					700;
 
 // Grid settings (SUSY)
@@ -56,14 +48,14 @@ $columns_xl:			12;
 // $media-layout: min-width mq | total columns | max-width mq
 $s: 					0 $columns_s 640px;
 $m: 					641px $columns_m 880px;
-$m_up: 					641px $columns_m  lt-ie9;
+$m_up: 				641px $columns_m  lt-ie9;
 $l: 					881px $columns_l 1200px;
-$l_up: 					881px $columns_l  lt-ie9;
+$l_up: 				881px $columns_l  lt-ie9;
 $xl: 					1200px $columns_xl;	
 $ie: 					0 $columns_l lt-ie9;			
 
 // Font Stack
-$heading_font: 			"proxima-nova", helvetica, arial, sans-serif;
+$heading_font: 		"proxima-nova", helvetica, arial, sans-serif;
 $body_font: 			$heading_font;
 
 // Box sizing

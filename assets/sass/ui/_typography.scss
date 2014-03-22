@@ -19,7 +19,7 @@ textarea{
 // Paragraph Styles
 
 p{
-	margin-bottom: size(1);	
+	@include rem('margin-bottom',$base_ie);
 
 	&:last-child{
 		margin: 0;
@@ -30,14 +30,14 @@ p{
 
 .lead{
 	font-size: $lead;
-	line-height: 1.3;
+	@include rem('line-height',20px);
 }
 
 // Small type ideal for captions
 
 .small{
-	font-size: typesize(0.75);
-	line-height: 1.3;
+	@include rem('font-size',11px);
+	@include rem('line-height',20px);
 }
 
 // Links
@@ -62,9 +62,8 @@ h1,h2,h3,h4,h5,h6{
 	color: #292929;
 	line-height: 1.3;
 	letter-spacing: -1px;
-	margin-bottom: size(1);
+	@include rem('margin-bottom',$base_ie);
 }
-
 h1{ 
 	font-size: $h1;
 }
@@ -87,15 +86,15 @@ em{ font-style: italic; }
 
 ul {	
 	list-style-type: disc;
-	margin: 0 0 size(1) size(1);
+	@include rem('margin',0 0 $base_ie $base_ie);
 }
 
 ol {
 	list-style-type: decimal;
 	font-weight: normal;
-	margin: 0 0 size(1) size(1);
+	@include rem('margin',0 0 $base_ie $base_ie);
 }
 
 pre{
-	margin-bottom: size(1);
+	//margin-bottom: size(1);
 }
