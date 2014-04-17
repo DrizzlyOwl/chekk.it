@@ -6,27 +6,27 @@
 // Label
 
 label {
-	@include rem('font-size',11px);
+	font-size: typesize(0.75);
 	font-weight: $medium;
 	text-transform: uppercase;
 	display: block;
-	@include rem('margin-bottom',8px);
+	margin: 0 0 size(0.5) 0;
 }
 
 input, 
 select, 
 textarea{
 	font-family: inherit;
-	@include rem('font-size',$base_ie);
+	font-size: typesize(1);
 	outline: none;
 }
 
 input{
 	display: block;
-	@include rem('margin-bottom',8px);
+	margin: 0 0 size(1) 0;
 	width: 100%;
 	border: none;
-	@include rem('padding',8px);
+	padding: size(0.5); 
 	outline: none;
 	@include border-radius($radius);
 	border: 1px solid #949393;
@@ -37,20 +37,16 @@ input{
 }
 
 textarea{
-	@include rem('min-height',90px);
+	min-height: size(6);
 	width: 100%;
 	@include border-radius($radius);
 	border: 1px solid darken(#ccc,15%);
-	@include rem('padding',8px);
-	@include rem('margin-bottom',8px);
+	padding: size(0.25); 
+	margin: 0 0 size(1) 0;
 }
-
 
 .validation-problem{
-	border: 1px solid $clr_problem !important;
-	background:lighten($clr_problem,35%);
-}
-
-.alert-slidedown{
-	display: none;
+	@include box-shadow(inset $clr_problem 0 0 10px);
+	&:focus{
+	}
 }

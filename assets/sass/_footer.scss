@@ -4,13 +4,12 @@
  */
 
 .site-footer{
+	max-width: 85%;
+	margin: 0 auto;
 	text-align:center;
-	margin-left: auto;
-	margin-right: auto;
-	@include rem('margin-top',$base_ie*2);
-	border-top: 1px solid darken(white,5%);
-	max-width: 75%;
-	@include rem('padding',7px 0);
+	margin-top: size(1);
+	border-top: 1px solid #eee;
+	padding: size(0.5) 0;
 	p{color: #aaa;}
 	a{ color: darken(#aaa,20%); }
 }

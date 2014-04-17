@@ -24,7 +24,7 @@
 
 html { 
 	font-size: $font-size;
-	@include rem('line-height',24px);
+	line-height: 1.5;
 	@include at-breakpoint($m){ font-size: $font-size-m; }
 	@include at-breakpoint($l){ font-size: $font-size-l; }
 	@include at-breakpoint($xl){ font-size: $font-size-xl; }

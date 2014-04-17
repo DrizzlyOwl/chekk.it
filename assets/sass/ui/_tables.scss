@@ -5,9 +5,11 @@
 table { 
 	width: 100%;
 	background: #fff;
-	@include rem('margin-bottom',$base_ie);
-	@include rem('font-size',$base_ie);
+	//border: 1px solid #949393;
+	margin-bottom: size(1);
+	font-size: typesize(1);
 	border-collapse: collapse;
+	margin-bottom: size(1);
 }
 
 	thead{
@@ -20,11 +22,11 @@ table {
 	tbody tr:nth-child(even) {background: #eae8e8}
 
 	th,td{
-		@include rem('padding',8px);
+		padding: size(0.5);
 	}
 
 	th{
 		font-weight: $medium;		
 		font-family: $heading_font;
-		@include rem('font-size',18px);
+		font-size: typesize(1.2);
 	}

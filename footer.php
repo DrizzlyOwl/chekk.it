@@ -2,9 +2,8 @@
 	<div class="wrapper">
 		<p>Authors: <a href="//twitter.com/DrizzlyOwl">@DrizzlyOwl</a> // <a href="//twitter.com/roikles">@Roikles</a></p>
 		<small>Thanks to
-		<a href="//twitter.com/PhonicUK">@PhonicUK</a> <br>
-		Chekk.it utilises
-		<a href="//requests.ryanmccue.info/">Requests</a> and <a href="//bukget.org">BukGet</a><br>
+		<a href="//twitter.com/thexpaw">@xPaw</a> <br>
+		Chekk.it utilises <a href="//bukget.org">BukGet API</a><br>
 		</small>
 	</div>
 </footer>
